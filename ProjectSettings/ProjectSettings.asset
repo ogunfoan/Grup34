@@ -934,11 +934,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 26b60d3a-4a92-4381-b52b-1f848b64e5c8
+  cloudProjectId: f5adea1a-cf31-40a4-9a72-93e736299eca
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: False Awakening
-  organizationId: ogunfoan
+  organizationId: yzta_grup34
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

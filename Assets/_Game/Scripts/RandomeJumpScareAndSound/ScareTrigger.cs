@@ -32,6 +32,8 @@ public class ScareTrigger : MonoBehaviour
 
         if (!other.TryGetComponent<CharacterController>(out CharacterController _)) return;
 
+        AnalyticsManager.Instance.TriggerAnalyticsData(AnalyticsManager.Instance.jsEventName);
+
         audioSource.volume = 0.9f;
         audioSource.PlayOneShot(scareClip);
 

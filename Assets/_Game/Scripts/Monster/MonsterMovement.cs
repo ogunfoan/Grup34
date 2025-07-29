@@ -167,6 +167,8 @@ public class MonsterMovement : MonoBehaviour
         if (!jumpScare) return;
         //if (scareImage == null) return;
 
+        AnalyticsManager.Instance.TriggerAnalyticsData(AnalyticsManager.Instance.mcEventName);
+
         //AudioSource.Play();
         bgMusic?.SetActive(false);
         AudioSource?.PlayOneShot(clip1);

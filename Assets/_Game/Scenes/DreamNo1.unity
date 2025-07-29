@@ -3263,6 +3263,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b20d7c47e4b68e041a421b628001a60e, type: 2}
+    - target: {fileID: 1088564489762340215, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4289087914784933539, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: spawnpoints.Array.size
       value: 0
@@ -8993,6 +8997,50 @@ CapsuleCollider:
   m_Height: 0.11101201
   m_Direction: 1
   m_Center: {x: -0.007438607, y: -0.026650278, z: 0.0033940263}
+--- !u!1 &1757372079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1757372081}
+  - component: {fileID: 1757372080}
+  m_Layer: 0
+  m_Name: AnalyticsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1757372080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757372079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fec7cd2938f3746b04487da05870b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1757372081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757372079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1773103261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5146681718063874739, guid: 73cfba07602f54796a6aa3ddf449afc3, type: 3}
@@ -12630,3 +12678,4 @@ SceneRoots:
   - {fileID: 1875561183}
   - {fileID: 7315393104456170921}
   - {fileID: 1945330083}
+  - {fileID: 1757372081}
