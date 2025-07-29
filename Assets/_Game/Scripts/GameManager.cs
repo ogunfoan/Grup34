@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     //public Texture[] menuUi;
     //public UnityEngine.UIElements.Image image;
     public UnityEngine.UI.Image imageUI;
+    public GameObject adsPanel;
 
     public TextMeshProUGUI textUI;
      
@@ -58,8 +59,9 @@ public class GameManager : MonoBehaviour
 
         if (!isGameStopped)
         {
-            //Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            adsPanel?.SetActive(true);
             //image.image = menuUi[0];
             imageUI.enabled = true;
             textUI.enabled = true;
@@ -71,10 +73,13 @@ public class GameManager : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
+            //Cursor.lockState = CursorLockMode.Confined;
 
             //Cursor.lockState = CursorLockMode.None; // Kýsa süre None yap
             Cursor.lockState = CursorLockMode.Locked; // Sonra kilitle
             Cursor.visible = false;
+
+            adsPanel?.SetActive(false);
 
             //Cursor.lockState = CursorLockMode.Confined;
             //image.image = null;
