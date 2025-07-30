@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject DreamBilgilendirmeCanvas;
     public AudioSource Dream1WakeUpSound, Dream2WakeUpSound;
     private bool isGameStopped = false;
     public Volume menuBlur;
@@ -55,8 +56,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (DreamBilgilendirmeCanvas != null)
+            {
+                DreamBilgilendirmeCanvas.SetActive(!DreamBilgilendirmeCanvas.activeSelf);
+            }
+        }
+    }
 
-    private void ShowMenu()
+        private void ShowMenu()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0) return;
 
