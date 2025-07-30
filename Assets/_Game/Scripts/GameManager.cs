@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-        private void ShowMenu()
+    private void ShowMenu()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0) return;
 
@@ -80,22 +80,16 @@ public class GameManager : MonoBehaviour
             imageUI.enabled = true;
             textUI.enabled = true;
             menuBlur.enabled = true;
-            Time.timeScale = 0f;
             AudioListener.pause = true;
             isGameStopped = true;
+            Time.timeScale = 0f;
         }
         else
         {
             Time.timeScale = 1f;
-            //Cursor.lockState = CursorLockMode.Confined;
-
-            //Cursor.lockState = CursorLockMode.None; // Kýsa süre None yap
-            Cursor.lockState = CursorLockMode.Locked; // Sonra kilitle
-            Cursor.visible = false;
 
             adsPanel?.SetActive(false);
 
-            //Cursor.lockState = CursorLockMode.Confined;
             //image.image = null;
             imageUI.enabled = false;
             textUI.enabled = false;
@@ -103,20 +97,19 @@ public class GameManager : MonoBehaviour
             AudioListener.pause = false;
             isGameStopped = false;
 
-            Application.focusChanged += OnFocusChanged;
-
-        }
-    }
-
-    void OnFocusChanged(bool hasFocus)
-    {
-        if (hasFocus)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = false;
-            Application.focusChanged -= OnFocusChanged;
+
+            StartCoroutine(ReLockCursorNextFrame());
+
         }
     }
+    private IEnumerator ReLockCursorNextFrame()
+    {
+        yield return null;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
 
     private IEnumerator PlayWakeUpAndContinue(AudioSource audio)
     {
