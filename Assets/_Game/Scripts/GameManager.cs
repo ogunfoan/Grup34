@@ -1,11 +1,12 @@
 using TMPro;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioSource Dream1WakeUpSound;
+    public AudioSource Dream1WakeUpSound, Dream2WakeUpSound;
     private bool isGameStopped = false;
     public Volume menuBlur;
     //public Texture[] menuUi;
@@ -18,11 +19,10 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         #region PlayerPrefs kayýtlarýný sýfýrlamak için burayý yorum satýrýndan çýkarýn
-        /*
+        /* 
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
         */
-
         // bunu yorum satýrýndan çýkarýp, WakeUpSound scriptine gidin.
         #endregion
     }
@@ -41,10 +41,13 @@ public class GameManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
 
-        if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
+        if (PlayerPrefs.GetInt("Dream2WakeUp") == 1)
         {
-
-            Dream1WakeUpSound?.Play();
+            StartCoroutine(PlayWakeUpAndContinue(Dream2WakeUpSound));
+        }
+        else if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
+        {
+            StartCoroutine(PlayWakeUpAndContinue(Dream1WakeUpSound));
         }
         else
         {
@@ -102,5 +105,29 @@ public class GameManager : MonoBehaviour
             Cursor.visible = false;
             Application.focusChanged -= OnFocusChanged;
         }
+    }
+
+    private IEnumerator PlayWakeUpAndContinue(AudioSource audio)
+    {
+        if (audio == null)
+        {
+            Debug.LogWarning("WakeUp AudioSource is null!");
+            yield break;
+        }
+
+        audio.Play();
+        yield return new WaitWhile(() => audio.isPlaying);
+
+        OnWakeUpFinished(); // Ses bittiðinde yapýlacaklar
+    }
+
+    private void OnWakeUpFinished()
+    {
+        PlayerPrefs.SetInt("Dream1WakeUp", 0);
+        PlayerPrefs.SetInt("Dream2WakeUp", 0);
+        Debug.Log("SES BÝTTÝ");
+        PlayerPrefs.SetInt("RadyoEtkilesim", 1);
+        PlayerPrefs.Save();
+        PlayDoctorRoomSound.instance.etkilesimUpdate();
     }
 }

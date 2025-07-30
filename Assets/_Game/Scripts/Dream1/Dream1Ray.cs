@@ -12,6 +12,7 @@ public class Dream1Ray : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        PlayerPrefs.SetInt("RadyoEtkilesim", 0);
         PlayerPrefs.SetInt("Collected", 0);
         CollectedText.text = PlayerPrefs.GetInt("Collected").ToString() + "/3";
     }
@@ -133,6 +134,7 @@ public class Dream1Ray : MonoBehaviour
         if (Pacifier == true && Bear == true && Hammer == true)
         {
             PlayerPrefs.SetInt("Dream1WakeUp", 1);
+            PlayerPrefs.SetInt("YatakEtkilesim", 0);
             SceneManager.LoadScene("HospitalRoomMap");
             Debug.Log("1 Bolum Kazanildi.");
         }
@@ -145,6 +147,7 @@ public class Dream1Ray : MonoBehaviour
         if (Paper == true && MusicBox == true && Shoes == true)
         {
             PlayerPrefs.SetInt("Dream2WakeUp", 1);
+            PlayerPrefs.SetInt("YatakEtkilesim", 0);
             SceneManager.LoadScene("HospitalRoomMap");
             Debug.Log("2 Bolum Kazanildi.");
         }
@@ -157,6 +160,7 @@ public class Dream1Ray : MonoBehaviour
         if (Clothes == true && Vaccine == true && ToyCar == true)
         {
             PlayerPrefs.SetInt("Dream3WakeUp", 1);
+            PlayerPrefs.SetInt("YatakEtkilesim", 0);
             SceneManager.LoadScene("HospitalRoomMap");
             Debug.Log("3 Bolum Kazanildi.");
         }

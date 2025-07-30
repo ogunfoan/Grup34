@@ -23,13 +23,13 @@ public class SoundsPrefs : MonoBehaviour
         {
             PlayerPrefs.SetInt("DoctorRoomSound", 0);
         }
-        else if (!PlayerPrefs.HasKey("Etkileþim"))
+        else if (!PlayerPrefs.HasKey("RadyoEtkilesim"))
         {
-            PlayerPrefs.SetInt("RadyoEtkileþim", 0);
+            PlayerPrefs.SetInt("RadyoEtkilesim", 0);
         }
-        else if (!PlayerPrefs.HasKey("YatakEtkileþim"))
+        else if (!PlayerPrefs.HasKey("YatakEtkilesim"))
         {
-            PlayerPrefs.SetInt("YatakEtkileþim", 0);
+            PlayerPrefs.SetInt("YatakEtkilesim", 0);
 
         }
         else if (!PlayerPrefs.HasKey("Dream1WakeUp"))

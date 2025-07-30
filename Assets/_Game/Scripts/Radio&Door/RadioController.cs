@@ -12,7 +12,7 @@ public class RadioController : MonoBehaviour
     public TMP_Text MissionText;
 
     [Header("Audio")]
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource Dream1_Radio, Dream2_Radio, Dream3_Radio;
 
     [Header("References")]
     private PlayerInput playerInput;
@@ -34,27 +34,11 @@ public class RadioController : MonoBehaviour
         playerInput.OnInteractTriggered += OnClick;
 
         mainCamera = Camera.main;
-        audioSource = GetComponent<AudioSource>();
 
         //screenCenter = new Vector3 (Screen.width / 2, Screen.height / 2);
 
         stopButton?.SetPressed(true);
     }
-
-    private void Update()
-    {
-        if (audioSource == null) return;
-
-        if (isPlaying && wasPlaying && !audioSource.isPlaying)
-        {
-            OnAudioFinished();
-            isPlaying = false;
-        }
-
-        // g�ncel durumunu kaydet
-        wasPlaying = audioSource.isPlaying;
-    }
-
     private void OnDisable()
     {
         if (playerInput == null) return;
@@ -97,38 +81,38 @@ public class RadioController : MonoBehaviour
 
     private void PlayRadio()
     {
-        if (audioSource.clip == null) 
+        if (PlayerPrefs.GetInt("Dream1WakeUp") == 0)
         {
-            Debug.LogError("Audio clip is null");
-            return;
+            StartCoroutine(PlayAndWait(Dream1_Radio));
         }
-
-        isPlaying = true;
-
-        playButton?.SetPressed(true);
-        stopButton?.SetPressed(false);
-
-        audioSource.Play();
-        DoctorRoomSound?.GetComponent<AudioSource>().Stop();
+        else if (PlayerPrefs.GetInt("Dream2WakeUp") == 0)
+        {
+            StartCoroutine(PlayAndWait(Dream2_Radio));
+        }
+        else if (PlayerPrefs.GetInt("Dream3WakeUp") == 0)
+        {
+            StartCoroutine(PlayAndWait(Dream3_Radio));
+        }
     }
 
     private void StopRadio()
     {
         if (!isPlaying) return;
 
+        Dream1_Radio?.Stop();
+        Dream2_Radio?.Stop();
+        Dream3_Radio?.Stop();
+
         isPlaying = false;
 
         playButton?.SetPressed(false);
         stopButton?.SetPressed(true);
-
-        audioSource.Stop();
     }
 
 
     // D��ar�dan ses de�i�tirmek i�in
     public void SetAudioClip(AudioClip clip)
     {
-        audioSource.clip = clip;
 
         // Yeni ses geldi�inde e�er oynuyorsa durdur
         if (isPlaying)
@@ -139,10 +123,29 @@ public class RadioController : MonoBehaviour
         PlayRadio();
     }
 
+    private IEnumerator PlayAndWait(AudioSource audio)
+    {
+        if (audio == null)
+        {
+            Debug.LogWarning("AudioSource is null!");
+            yield break;
+        }
+
+        isPlaying = true;
+        playButton?.SetPressed(true);
+        stopButton?.SetPressed(false);
+
+        audio.Play();
+
+        yield return new WaitWhile(() => audio.isPlaying); // Ses bitene kadar bekle
+
+        isPlaying = false;
+        OnAudioFinished(); // Ses bittikten sonra çağrılır
+    }
 
     private void OnAudioFinished()
     {
-        PlayerPrefs.SetInt("YatakEtkile�im", 1);
+        PlayerPrefs.SetInt("YatakEtkilesim", 1);
         PlayerPrefs.Save();
         SoundsPrefs.instance.Missions();
         EtkilesimUpdate();
@@ -152,7 +155,7 @@ public class RadioController : MonoBehaviour
     {
         if (Bed == null) return;
 
-        if (PlayerPrefs.GetInt("YatakEtkile�im") == 1)
+        if (PlayerPrefs.GetInt("YatakEtkilesim") == 1)
         {
             Bed.tag = "Yatak";
             Bed.layer = 10;

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayDoctorRoomSound : MonoBehaviour
 {
+    public static PlayDoctorRoomSound instance;
     public GameObject CorridorObject, PlayButton;
     public AudioClip doctorRoomClip;
     private AudioSource audioSource;
@@ -9,7 +10,8 @@ public class PlayDoctorRoomSound : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("RadyoEtkile�im") == 1)
+        instance = this;
+        if (PlayerPrefs.GetInt("RadyoEtkilesim") == 1)
         {
             // radyo butonu ile etkile�imi a��yoruz.
             PlayButton.GetComponent<Collider>().enabled = true;
@@ -32,16 +34,16 @@ public class PlayDoctorRoomSound : MonoBehaviour
             hasPlayed = true;
             PlayerPrefs.SetInt("DoctorRoomSound", 1);
             SoundsPrefs.instance.Missions();
-            PlayerPrefs.SetInt("RadyoEtkile�im", 1);
+            PlayerPrefs.SetInt("RadyoEtkilesim", 1);
             PlayerPrefs.Save();
             etkilesimUpdate();
         }
     }
 
 
-    void etkilesimUpdate()
+    public void etkilesimUpdate()
     {
-        if (PlayerPrefs.GetInt("RadyoEtkile�im") == 1)
+        if (PlayerPrefs.GetInt("RadyoEtkilesim") == 1)
         {
             // radyo butonu ile etkile�imi a��yoruz.
             PlayButton.GetComponent<Collider>().enabled = true;
