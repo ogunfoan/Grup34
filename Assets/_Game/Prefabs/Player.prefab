@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4723978882936044589
 Transform:
@@ -904,6 +904,7 @@ GameObject:
   - component: {fileID: 5075989443922010816}
   - component: {fileID: 3002739740357915647}
   - component: {fileID: 4289087914784933539}
+  - component: {fileID: 1736673690991095026}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1049,6 +1050,19 @@ MonoBehaviour:
     m_Bits: 1024
   DreamCanvas: {fileID: 0}
   interactableText: {fileID: 0}
+--- !u!114 &1736673690991095026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458774027923765309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2e0924036b842fc8777a188ff04fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHiding: 0
 --- !u!1001 &5531120632016192859
 PrefabInstance:
   m_ObjectHideFlags: 0

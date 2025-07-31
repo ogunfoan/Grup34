@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHiding : MonoBehaviour
 {
-    private bool isHiding = false;
+    public bool isHiding = false;
     private CharacterController controller;
     private PlayerMovement movementScript; // kendi hareket script'in
 

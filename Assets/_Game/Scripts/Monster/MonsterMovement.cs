@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -37,6 +38,9 @@ public class MonsterMovement : MonoBehaviour
     
     AsyncOperation sceneLoadingOperation;
 
+    [Header("Hiding")]
+    public PlayerHiding playerHiding;
+
     private void Start()
     {
         agent.autoBraking = false;
@@ -45,6 +49,9 @@ public class MonsterMovement : MonoBehaviour
         sceneLoadingOperation.allowSceneActivation = false; // Anýnda geçmesin!
 
         GotoNextPoint();
+
+        if(playerHiding == null)
+            playerHiding = FindFirstObjectByType(typeof(PlayerHiding)).GetComponent<PlayerHiding>();
     }
 
     void GotoNextPoint()
@@ -76,10 +83,10 @@ public class MonsterMovement : MonoBehaviour
         if (!agent.pathPending && agent.remainingDistance < 0.5f && !isChasing)
             GotoNextPoint();
 
-        if (Input.GetMouseButton(1))
-        {
-            agent.SetDestination(player.transform.position);
-        }
+        //if (Input.GetMouseButton(1))
+        //{
+        //    agent.SetDestination(player.transform.position);
+        //}
 
         Vector3 directionToPlayer = player.position - transform.position;
         float distanceToPlayer = directionToPlayer.magnitude;
@@ -107,6 +114,9 @@ public class MonsterMovement : MonoBehaviour
                 }
                 else
                 {
+                    if (playerHiding.isHiding)
+                        return;
+
                     Debug.Log("Oyuncu tespit edildi! Saldýrýlýyor!");
                     isChasing = true;
                     agent.SetDestination(player.transform.position);
@@ -164,7 +174,7 @@ public class MonsterMovement : MonoBehaviour
     bool scareActive= false;
     private void OnTriggerEnter(Collider other)
     {
-        if (!jumpScare) return;
+        if (!jumpScare || playerHiding.isHiding) return;
         //if (scareImage == null) return;
 
         AnalyticsManager.Instance.TriggerAnalyticsData(AnalyticsManager.Instance.mcEventName);

@@ -311,6 +311,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 601853336}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
+      propertyPath: playerHiding
+      value: 
+      objectReference: {fileID: 2036739244}
+    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: monsterJumpScare
       value: 
       objectReference: {fileID: 1940658473}
@@ -3458,10 +3462,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b20d7c47e4b68e041a421b628001a60e, type: 2}
-    - target: {fileID: 1088564489762340215, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4289087914784933539, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: spawnpoints.Array.size
       value: 0
@@ -3515,7 +3515,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6458774027923765309, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
-      insertIndex: -1
+      insertIndex: 7
       addedObject: {fileID: 2036739243}
   m_SourcePrefab: {fileID: 100100000, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
 --- !u!4 &495706126 stripped
@@ -10654,6 +10654,17 @@ MonoBehaviour:
     m_Bits: 1024
   CollectedText: {fileID: 6580200778279784491}
   PickUpSound: {fileID: 1189295370}
+--- !u!114 &2036739244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1736673690991095026, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
+  m_PrefabInstance: {fileID: 487591874}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036739237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2e0924036b842fc8777a188ff04fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2054208564
 GameObject:
   m_ObjectHideFlags: 0
