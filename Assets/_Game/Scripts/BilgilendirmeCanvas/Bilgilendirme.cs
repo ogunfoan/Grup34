@@ -7,7 +7,7 @@ public class Bilgilendirme : MonoBehaviour
 {
     public GameObject bilgiCanvas;
     public Button NextButton, BackButton;
-    public Image gösterilecekYer;
+    public Image gosterilecekYer;
     public static Bilgilendirme Instance;
     public List<Sprite> bilgilendirmeSprites;
     private int currentIndex = 0;
@@ -21,7 +21,7 @@ public class Bilgilendirme : MonoBehaviour
     {
         Sprite sprite = Resources.Load<Sprite>("bilgilendirme/Kapak");
         bilgilendirmeSprites.Add(sprite);
-        gösterilecekYer.sprite = bilgilendirmeSprites[currentIndex];
+        gosterilecekYer.sprite = bilgilendirmeSprites[currentIndex];
 
         if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
         {
@@ -70,13 +70,13 @@ public class Bilgilendirme : MonoBehaviour
             }
             else
             {
-                Debug.Log("daha fazla düþemezsin.");
+                Debug.Log("daha fazla dï¿½ï¿½emezsin.");
             }
         }
     }
     private void UpdateImage()
     {
-        gösterilecekYer.sprite = bilgilendirmeSprites[currentIndex];
+        gosterilecekYer.sprite = bilgilendirmeSprites[currentIndex];
     }
 
     private void UpdateButtonStates()
