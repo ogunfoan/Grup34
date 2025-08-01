@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     //public Texture[] menuUi;
     //public UnityEngine.UIElements.Image image;
     public UnityEngine.UI.Image imageUI;
+    public UnityEngine.UI.Image imageUI2;
     public GameObject adsPanel;
 
     public TextMeshProUGUI textUI;
@@ -79,6 +80,7 @@ public class GameManager : MonoBehaviour
             adsPanel?.SetActive(true);
             //image.image = menuUi[0];
             imageUI.enabled = true;
+            imageUI2.enabled = true;
             textUI.enabled = true;
             menuBlur.enabled = true;
             AudioListener.pause = true;
@@ -93,6 +95,7 @@ public class GameManager : MonoBehaviour
 
             //image.image = null;
             imageUI.enabled = false;
+            imageUI2.enabled = false;
             textUI.enabled = false;
             menuBlur.enabled = false;
             AudioListener.pause = false;

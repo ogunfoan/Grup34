@@ -4260,10 +4260,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2345710340337188176, guid: 052635d6b0b6fc74f92e481c2ebdec60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2457061942398581708, guid: 052635d6b0b6fc74f92e481c2ebdec60, type: 3}
       propertyPath: adsPanel
       value: 
       objectReference: {fileID: 101689456}
+    - target: {fileID: 2457061942398581708, guid: 052635d6b0b6fc74f92e481c2ebdec60, type: 3}
+      propertyPath: imageUI2
+      value: 
+      objectReference: {fileID: 1723636259}
     - target: {fileID: 2457061942398581708, guid: 052635d6b0b6fc74f92e481c2ebdec60, type: 3}
       propertyPath: DreamBilgilendirmeCanvas
       value: 
@@ -9123,6 +9131,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ec92a759c8963846b3f0c65cf7b895e, type: 3}
   m_PrefabInstance: {fileID: 1215533649}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1723636259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3783606248409635094, guid: 052635d6b0b6fc74f92e481c2ebdec60, type: 3}
+  m_PrefabInstance: {fileID: 762707011}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1727083584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8361813447609068910, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}

@@ -33,7 +33,6 @@ public class RealTimeClokAPI : MonoBehaviour
             string json = request.downloadHandler.text;
             TimeDataPrimary timeData = JsonUtility.FromJson<TimeDataPrimary>(json);
 
-            // DÜZELTME BURADA:
             DateTimeOffset dto = DateTimeOffset.Parse(timeData.datetime);
             currentTime = dto.LocalDateTime;
 
