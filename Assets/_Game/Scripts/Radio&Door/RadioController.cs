@@ -29,7 +29,7 @@ public class RadioController : MonoBehaviour
     private void Start()
     {
         EtkilesimUpdate(); // yatak etkile�imi
-
+        Debug.Log("Dream1" + PlayerPrefs.GetInt("Dream1WakeUp"));
         playerInput = PlayerInput.Instance;
         playerInput.OnInteractTriggered += OnClick;
 

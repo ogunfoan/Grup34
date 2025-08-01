@@ -8,6 +8,11 @@ public class RadioButton : MonoBehaviour, IClickable
     [SerializeField] private float targetYPosition;
     [SerializeField] private float duration = 0.2f;
 
+    private void Start()
+    {
+        Debug.Log("Dream1 Wake Up Deðeri: " + PlayerPrefs.GetInt("Dream1WakeUp"));
+        Debug.Log("Dream2 Wake Up Deðeri: " + PlayerPrefs.GetInt("Dream2WakeUp"));
+    }
     public RadioButtonType OnClicked()
     {
         return buttonType;

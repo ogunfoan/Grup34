@@ -50,5 +50,10 @@ public class PlayDoctorRoomSound : MonoBehaviour
             MetallicController mc = PlayButton.GetComponent<MetallicController>();
             mc.StartMetallicEffect(2f);
         }
+        if (PlayerPrefs.GetInt("RadyoEtkilesim") == 0)
+        {
+
+            PlayButton.GetComponent<Collider>().enabled = false;
+        }
     }
 }

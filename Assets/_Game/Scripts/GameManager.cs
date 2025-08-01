@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("RadyoEtkilesim", 0);
         Cursor.lockState = CursorLockMode.Locked;
 
         if (PlayerPrefs.GetInt("Dream2WakeUp") == 1)
@@ -127,8 +128,6 @@ public class GameManager : MonoBehaviour
 
     private void OnWakeUpFinished()
     {
-        PlayerPrefs.SetInt("Dream1WakeUp", 0);
-        PlayerPrefs.SetInt("Dream2WakeUp", 0);
         Debug.Log("SES BÝTTÝ");
         PlayerPrefs.SetInt("RadyoEtkilesim", 1);
         PlayerPrefs.Save();

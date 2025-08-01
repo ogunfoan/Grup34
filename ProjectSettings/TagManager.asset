@@ -19,6 +19,7 @@ TagManager:
   - Clothes
   - Vaccine
   - ToyCar
+  - PlayButton
   layers:
   - Default
   - TransparentFX

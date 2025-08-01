@@ -1,63 +1,26 @@
-using System.Collections;
-using System.Linq;
-using TMPro;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
-using UnityEngine.SceneManagement;
 
-public class RaycastScript : MonoBehaviour
+public class PlayBUttonCOntroller : MonoBehaviour
 {
-    public static RaycastScript instance;
-    public float rayDistance = 5f; // Ray'in ne kadar uza�a gidece�i
-    public Canvas TimerCanvas;
-    public LayerMask layerMask, interactableLayer;
-    public Canvas DreamCanvas;
-
-    public TMP_Text interactableText;
-
-
-    // bulunacak nesneler
-    bool Emzik, Ayicik, Cingirak;
-
     public AudioSource Dream1_Radio, Dream2_Radio, Dream3_Radio;
     public GameObject Bed;
+    public LayerMask interactableLayer;
     bool isPlaying;
 
 
-    private void Awake()
+    private void Update()
     {
-        instance = this;
-    }
-
-    void Update()
-    {
-        if (interactableText != null)
-        {
-            interactableText.enabled = false;
-        }
-        else { return; }
-
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-        // Etkile�imli nesneler i�in raycast
-        if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
-        {
-            if (interactableText != null)
-            {
-                interactableText.enabled = true;
-            }
-            else { return; }
 
-            // E tu�una bas�ld�ysa etkile�imi �al��t�r
+        if (Physics.Raycast(ray, out hit, 5f, interactableLayer))
+        {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("e");
+                Debug.Log("Yeni kod e");
                 switch (hit.collider.tag)
                 {
-                    case "Yatak":
-                        StartCoroutine(DreamLoad());                        
-                        break;
-
                     case "PlayButton":
                         Debug.Log("butona geldi");
                         PlayButtonClicked();
@@ -70,26 +33,6 @@ public class RaycastScript : MonoBehaviour
             }
         }
     }
-
-    IEnumerator DreamLoad()
-    {
-        DreamCanvas.gameObject.SetActive(true);
-        yield return new WaitForSeconds(2.49f);
-        
-        if (PlayerPrefs.GetInt("Dream1WakeUp") == 0)
-        {
-            SceneManager.LoadScene("DreamNo1");
-        }
-        else if (PlayerPrefs.GetInt("Dream2WakeUp") == 0)
-        {
-            SceneManager.LoadScene("Dream2_New");
-        }
-        else if (PlayerPrefs.GetInt("Dream3WakeUp") == 0)
-        {
-            SceneManager.LoadScene("DreamNo3");
-        }
-    }
-
     public void PlayButtonClicked()
     {
         if (PlayerPrefs.GetInt("Dream1WakeUp") == 0)
@@ -127,9 +70,7 @@ public class RaycastScript : MonoBehaviour
     private void OnAudioFinished()
     {
         PlayerPrefs.SetInt("YatakEtkilesim", 1);
-        PlayerPrefs.SetInt("RadyoEtkilesim", 0);
         PlayerPrefs.Save();
-        PlayDoctorRoomSound.instance.etkilesimUpdate();
         SoundsPrefs.instance.Missions();
         EtkilesimUpdate();
     }
