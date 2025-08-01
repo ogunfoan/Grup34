@@ -1,4 +1,7 @@
+using DG.Tweening;
 using System.Collections;
+using System.Threading;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -41,13 +44,24 @@ public class MonsterMovement : MonoBehaviour
     [Header("Hiding")]
     public PlayerHiding playerHiding;
 
+    [Header("FinalChase (Just 3th dream)")]
+    public bool isFinalChase = false;
+    bool hasFleeTarget = false;
+    bool showInfoPanel = false;
+    public GameObject textUI;
+    public UnityEngine.UI.Image fadeImage;
+    public UnityEngine.UI.Image blackImage;
+    public float fadeDuration = 1f;
+    public GameObject dreamOneCanvas;
+    public Dream1Ray dream1Ray;
+    private bool monsterCaught;
+
     private void Start()
     {
         agent.autoBraking = false;
 
         sceneLoadingOperation = SceneManager.LoadSceneAsync("HospitalRoomMap");
         sceneLoadingOperation.allowSceneActivation = false; // Anýnda geçmesin!
-
         GotoNextPoint();
 
         if(playerHiding == null)
@@ -73,13 +87,40 @@ public class MonsterMovement : MonoBehaviour
         isWaiting = false;
         //controller.SetBool("isWaiting", isWaiting);
     }
+    public void FadeToOpaque()
+    {
+        fadeImage
+            .DOFade(1f, fadeDuration)
+            .OnComplete(() => {
+                blackImage.enabled = true;
+                dreamOneCanvas.SetActive(false);
 
+                //Son final sahnesi yükleme yeri
+        });
+    }
     void Update()
     {
+        if (monsterCaught) return;
+
         float speed = agent.velocity.magnitude;
         controller.SetBool("isWaiting", speed < 0.08f);
 
+        if(dream1Ray!= null)
+            if(dream1Ray.collectedAllItem)
+                isFinalChase = true;
 
+        if (isFinalChase)
+        {
+            if (!showInfoPanel)
+            {
+                textUI.SetActive(true);
+                showInfoPanel = true;
+            }
+
+            FleeLogic();
+            return;
+        }
+        //hey oldu
         if (!agent.pathPending && agent.remainingDistance < 0.5f && !isChasing)
             GotoNextPoint();
 
@@ -138,6 +179,37 @@ public class MonsterMovement : MonoBehaviour
         }
 
     }
+
+    void FleeLogic()
+    {
+        agent.speed = 5f;
+
+        // Eðer þu an hedef yoksa veya hedefe ulaþýldýysa yeni bir hedef belirle
+        if (!hasFleeTarget || (!agent.pathPending && agent.remainingDistance < 0.5f))
+        {
+            Vector3 fleeDir = transform.position - player.position;
+
+            // Kaçýþ yönüne rastgelelik ekle
+            Vector3 randomOffset = new Vector3(
+                Random.Range(-5f, 5f),
+                0,
+                Random.Range(-5f, 5f)
+            );
+
+            Vector3 fleePos = transform.position + fleeDir.normalized * 10f + randomOffset;
+
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(fleePos, out hit, 10f, NavMesh.AllAreas))
+            {
+                agent.SetDestination(hit.position);
+                hasFleeTarget = true;
+            }
+            else
+            {
+                hasFleeTarget = false; // Bulamazsa tekrar dene
+            }
+        }
+    }
     private void OnDrawGizmos()
     {
         //Gizmos.color = Color.green;
@@ -172,10 +244,21 @@ public class MonsterMovement : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionDistance);
     }
     bool scareActive= false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!jumpScare || playerHiding.isHiding) return;
         //if (scareImage == null) return;
+
+        if (isFinalChase)
+        {
+            FadeToOpaque();
+            Player.Instance.controller.canMove = false;
+            agent.ResetPath();
+            agent.isStopped = true;
+            monsterCaught = true;
+            return;
+        }
 
         AnalyticsManager.Instance.TriggerAnalyticsData(AnalyticsManager.Instance.mcEventName);
 

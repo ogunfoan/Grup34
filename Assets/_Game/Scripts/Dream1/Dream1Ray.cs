@@ -165,16 +165,18 @@ public class Dream1Ray : MonoBehaviour
         else { return; }
     }
 
+    public bool collectedAllItem = false;
     private void Dream3Control()
     {
         CollectedText.text = PlayerPrefs.GetInt("Collected").ToString() + "/3";
         if (Clothes == true && Vaccine == true && ToyCar == true)
         {
+            collectedAllItem = true;
             Sprite sprite = Resources.Load<Sprite>("bilgilendirme/Dream3_WakeUp");
             Bilgilendirme.Instance.bilgilendirmeSprites.Add(sprite);
             PlayerPrefs.SetInt("Dream3WakeUp", 1);
             PlayerPrefs.SetInt("YatakEtkilesim", 0);
-            SceneManager.LoadScene("HospitalRoomMap");
+            //SceneManager.LoadScene("HospitalRoomMap");
             Debug.Log("3 Bolum Kazanildi.");
         }
         else { return; }
