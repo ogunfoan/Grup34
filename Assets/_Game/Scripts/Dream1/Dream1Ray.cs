@@ -12,7 +12,6 @@ public class Dream1Ray : MonoBehaviour
 
 
     private int rayDistance = 5;
-    public LayerMask interactableLayer;
     bool Pacifier, Bear, Hammer, Paper, MusicBox, Shoes, Clothes, Vaccine, ToyCar;
     public TMP_Text CollectedText;
     public AudioSource PickUpSound;
@@ -29,9 +28,8 @@ public class Dream1Ray : MonoBehaviour
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
+        if (Physics.Raycast(ray, out hit, rayDistance))
         {
-
             if (Input.GetKeyDown(KeyCode.E))
             {
                 switch (hit.collider.tag)
@@ -128,6 +126,8 @@ public class Dream1Ray : MonoBehaviour
 
                     default:
                         Debug.Log("Hicbir islem yapilmadi.");
+                        Debug.Log("tag: " + hit.collider.tag);
+                        Debug.Log("name: " + hit.collider.name);
                         break;
                 }
             }
