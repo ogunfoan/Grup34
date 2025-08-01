@@ -9,10 +9,7 @@ public class RadioController : MonoBehaviour
     private Vector2 screenCenter;
     private bool wasPlaying = false;
     public GameObject Bed, DoctorRoomSound;
-    public TMP_Text MissionText;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource Dream1_Radio, Dream2_Radio, Dream3_Radio;
 
     [Header("References")]
     private PlayerInput playerInput;
@@ -81,27 +78,12 @@ public class RadioController : MonoBehaviour
 
     private void PlayRadio()
     {
-        if (PlayerPrefs.GetInt("Dream1WakeUp") == 0)
-        {
-            StartCoroutine(PlayAndWait(Dream1_Radio));
-        }
-        else if (PlayerPrefs.GetInt("Dream2WakeUp") == 0)
-        {
-            StartCoroutine(PlayAndWait(Dream2_Radio));
-        }
-        else if (PlayerPrefs.GetInt("Dream3WakeUp") == 0)
-        {
-            StartCoroutine(PlayAndWait(Dream3_Radio));
-        }
+        
     }
 
     private void StopRadio()
     {
         if (!isPlaying) return;
-
-        Dream1_Radio?.Stop();
-        Dream2_Radio?.Stop();
-        Dream3_Radio?.Stop();
 
         isPlaying = false;
 
@@ -121,34 +103,6 @@ public class RadioController : MonoBehaviour
         }
 
         PlayRadio();
-    }
-
-    private IEnumerator PlayAndWait(AudioSource audio)
-    {
-        if (audio == null)
-        {
-            Debug.LogWarning("AudioSource is null!");
-            yield break;
-        }
-
-        isPlaying = true;
-        playButton?.SetPressed(true);
-        stopButton?.SetPressed(false);
-
-        audio.Play();
-
-        yield return new WaitWhile(() => audio.isPlaying); // Ses bitene kadar bekle
-
-        isPlaying = false;
-        OnAudioFinished(); // Ses bittikten sonra çağrılır
-    }
-
-    private void OnAudioFinished()
-    {
-        PlayerPrefs.SetInt("YatakEtkilesim", 1);
-        PlayerPrefs.Save();
-        SoundsPrefs.instance.Missions();
-        EtkilesimUpdate();
     }
 
     private void EtkilesimUpdate()

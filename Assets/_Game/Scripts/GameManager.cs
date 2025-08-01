@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("RadyoEtkilesim", 0);
+        
         Cursor.lockState = CursorLockMode.Locked;
 
         if (PlayerPrefs.GetInt("Dream2WakeUp") == 1)
@@ -123,6 +124,9 @@ public class GameManager : MonoBehaviour
             yield break;
         }
 
+        PlayerPrefs.SetInt("RadyoEtkilesim", 0);
+        PlayerPrefs.Save();
+        PlayDoctorRoomSound.instance.etkilesimUpdate();
         audio.Play();
         yield return new WaitWhile(() => audio.isPlaying);
 

@@ -60,10 +60,6 @@ public class SoundsPrefs : MonoBehaviour
         {
             MissionText.text = "Odana Geri Dön Ve Radyoyu Dinle.";
         }
-        if (PlayerPrefs.GetInt("YatakEtkilesim") == 1)
-        {
-            MissionText.text = "Yataða Yat";
-        }
         if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
         {
             MissionText.text = "2. Rüya Ýçin Radyoyu Dinle";
@@ -75,6 +71,10 @@ public class SoundsPrefs : MonoBehaviour
         if (PlayerPrefs.GetInt("Dream3WakeUp") == 1)
         {
             MissionText.text = "Rüyalar Bitti.";
+        }
+        if (PlayerPrefs.GetInt("YatakEtkilesim") == 1)
+        {
+            MissionText.text = "Yataða Yat";
         }
     }
 }

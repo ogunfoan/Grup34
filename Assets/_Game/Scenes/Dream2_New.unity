@@ -431,6 +431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1521207164}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -486,6 +490,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -602,9 +610,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -956,6 +972,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a5f6fa497cf53d7469bd1066732507c6, type: 2}
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -999,6 +1019,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -1283,6 +1307,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.235
@@ -1327,6 +1355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dream2Door Locked (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
       value: 0
@@ -1348,9 +1380,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1609,6 +1649,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4289087914784933539, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
+      propertyPath: interactableText
+      value: 
+      objectReference: {fileID: 1401484839569085522}
     - target: {fileID: 4524689084665734868, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_Color.b
       value: 0.63999647
@@ -1716,6 +1760,7 @@ MonoBehaviour:
     m_Bits: 1024
   CollectedText: {fileID: 1333992211067910040}
   PickUpSound: {fileID: 2126948672}
+  collectedAllItem: 0
 --- !u!1001 &605920043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1854,6 +1899,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1874347482}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1897,6 +1946,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -2784,9 +2837,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2845,9 +2906,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3217,9 +3286,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalScale.x
@@ -3444,6 +3521,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1428177899}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3487,6 +3568,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -4013,10 +4098,6 @@ MonoBehaviour:
     m_Bits: 1079
   Bed: {fileID: 0}
   DoctorRoomSound: {fileID: 0}
-  MissionText: {fileID: 0}
-  Dream1_Radio: {fileID: 0}
-  Dream2_Radio: {fileID: 0}
-  Dream3_Radio: {fileID: 0}
   playButton: {fileID: 0}
   stopButton: {fileID: 0}
 --- !u!4 &1538693405
@@ -4591,6 +4672,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1764539743}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.05
@@ -4638,6 +4723,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -5383,9 +5472,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6109,6 +6206,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2096357569}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.05
@@ -6156,6 +6257,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -7996,6 +8101,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2777513517845679602}
   m_CullTransparentMesh: 1
+--- !u!224 &965845180417505546
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4549528057805077098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8726461453093979897}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 48.644226}
+  m_SizeDelta: {x: 1246, y: 37.9063}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971460192384173221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8149,6 +8273,97 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1401484839569085522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4549528057805077098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\"E\" ile etkile\u015Fime ge\xE7in."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 784edfd0097e2834eac43168af856993, type: 2}
+  m_sharedMaterial: {fileID: -4980200713746852769, guid: 784edfd0097e2834eac43168af856993, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 25
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1611187193702709304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8197,6 +8412,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1366373633}
     m_Modifications:
+    - target: {fileID: 2933794950699488058, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5337981077971907879, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8240,6 +8459,10 @@ PrefabInstance:
     - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: m_Name
       value: Dream2Door Locked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022301486650413395, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9008292166097643333, guid: d7216cc6511a0b744a0ac6782d80bf28, type: 3}
       propertyPath: openAngle
@@ -8824,9 +9047,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1538693405}
     m_Modifications:
+    - target: {fileID: 1720062277589995940, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_Name
       value: Dream2Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226643252320632360, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3942998844715674391, guid: 6706ab01a1f097a4f96bc2cffa47c36a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8999,6 +9230,24 @@ GameObject:
   - component: {fileID: 3355314944308004894}
   m_Layer: 10
   m_Name: Cylinder.003
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &4549528057805077098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965845180417505546}
+  - component: {fileID: 8797128882392663567}
+  - component: {fileID: 1401484839569085522}
+  m_Layer: 5
+  m_Name: InteractableText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9817,6 +10066,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5617380915440582884}
+  - {fileID: 965845180417505546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9824,6 +10074,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!222 &8797128882392663567
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4549528057805077098}
+  m_CullTransparentMesh: 1
 --- !u!114 &8945969529782574384
 MonoBehaviour:
   m_ObjectHideFlags: 0

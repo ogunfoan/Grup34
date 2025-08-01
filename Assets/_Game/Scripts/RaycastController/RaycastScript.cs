@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class RaycastScript : MonoBehaviour
 {
+
+    [SerializeField] private RadioButton playButton;
     public static RaycastScript instance;
     public float rayDistance = 5f; // Ray'in ne kadar uza�a gidece�i
     public Canvas TimerCanvas;
@@ -20,7 +22,7 @@ public class RaycastScript : MonoBehaviour
     bool Emzik, Ayicik, Cingirak;
 
     public AudioSource Dream1_Radio, Dream2_Radio, Dream3_Radio;
-    public GameObject Bed;
+    public GameObject Bed, DoctorRoomSound;
     bool isPlaying;
 
 
@@ -92,6 +94,13 @@ public class RaycastScript : MonoBehaviour
 
     public void PlayButtonClicked()
     {
+        if (DoctorRoomSound != null)
+        {
+            DoctorRoomSound.GetComponent<AudioSource>().Stop();
+        }
+
+        playButton?.SetPressed(true);
+
         if (PlayerPrefs.GetInt("Dream1WakeUp") == 0)
         {
             StartCoroutine(PlayAndWait(Dream1_Radio));
@@ -104,8 +113,10 @@ public class RaycastScript : MonoBehaviour
         {
             StartCoroutine(PlayAndWait(Dream3_Radio));
         }
+        PlayerPrefs.SetInt("RadyoEtkilesim", 0);
+        PlayDoctorRoomSound.instance.etkilesimUpdate();
     }
-
+        
     private IEnumerator PlayAndWait(AudioSource audio)
     {
         if (audio == null)
@@ -127,9 +138,7 @@ public class RaycastScript : MonoBehaviour
     private void OnAudioFinished()
     {
         PlayerPrefs.SetInt("YatakEtkilesim", 1);
-        PlayerPrefs.SetInt("RadyoEtkilesim", 0);
         PlayerPrefs.Save();
-        PlayDoctorRoomSound.instance.etkilesimUpdate();
         SoundsPrefs.instance.Missions();
         EtkilesimUpdate();
     }
