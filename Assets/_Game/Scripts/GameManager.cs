@@ -45,11 +45,11 @@ public class GameManager : MonoBehaviour
         
         Cursor.lockState = CursorLockMode.Locked;
 
-        if (PlayerPrefs.GetInt("Dream2WakeUp") == 1)
+        if (PlayerPrefs.GetInt("Dream2WakeUp") == 1 && PlayerPrefs.GetInt("Dream3Played") == 0)
         {
             StartCoroutine(PlayWakeUpAndContinue(Dream2WakeUpSound));
         }
-        else if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
+        else if (PlayerPrefs.GetInt("Dream1WakeUp") == 1 && PlayerPrefs.GetInt("Dream2Played") == 0)
         {
             StartCoroutine(PlayWakeUpAndContinue(Dream1WakeUpSound));
         }

@@ -37,6 +37,14 @@ public class SoundsPrefs : MonoBehaviour
             PlayerPrefs.SetInt("Dream1WakeUp", 0);
 
         }
+        else if (!PlayerPrefs.HasKey("Dream2Played"))
+        {
+            PlayerPrefs.SetInt("Dream2Played", 0);
+        }
+        else if (!PlayerPrefs.HasKey("Dream3Played"))
+        {
+            PlayerPrefs.SetInt("Dream3Played", 0);
+        }
 
 
         #endregion
