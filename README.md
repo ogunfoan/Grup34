@@ -251,42 +251,20 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
 
 <details> <summary><h3>False Awakening – Oyun İçi Durum Görselleri</h3></summary>
   
-![Screenshot_62](https://github.com/user-attachments/assets/db619a6f-02c4-4a53-a304-a7685a1e9e7a)
-![Screenshot_63](https://github.com/user-attachments/assets/a950dbe4-75ae-494d-89be-dbb0af40e7bb)
-![Screenshot_61](https://github.com/user-attachments/assets/f75a48c4-6dd6-4829-9cab-b3a23086ea54)
-![Screenshot_60](https://github.com/user-attachments/assets/7ca08c04-8d1a-4177-afd6-652c440a177b)
-
-
-**(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN KORKABİLİRSİNİZ!!!)** </h1>
 
 
 
-https://github.com/user-attachments/assets/e8b775f8-df1e-4d6d-a181-2278b4e08b6a
+https://github.com/user-attachments/assets/e75feef4-630e-4fcd-b6ed-d761eb8f7df4
 
 
-https://github.com/user-attachments/assets/65162b08-70b8-4245-966e-cb692c23182b
-
-
-https://github.com/user-attachments/assets/dea3dbab-88f2-4c35-b5c2-1f93e1783300
-
-
-https://github.com/user-attachments/assets/ec28333f-467d-41da-8a94-cfc98901cfc1
+https://github.com/user-attachments/assets/e5afe2d5-4fdf-4006-895e-67bb70c80b63
 
 
 
-https://github.com/user-attachments/assets/3fb15ace-d84e-47c0-a036-8e07dce8bb54
+https://github.com/user-attachments/assets/41efb682-b01b-4449-ac9d-929f99e0758e
 
 
 
-https://github.com/user-attachments/assets/6d228c2c-af7e-4581-8037-4dbfea62fc20
-
-
-
-https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
-
-
-
-![FA - Canavarla An](https://github.com/user-attachments/assets/56fac651-bce0-44ff-b311-ad52700d9b6a)
 
 
 **(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN)**
@@ -302,7 +280,9 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
   
 - **Sprint Retrospective**:
   - Sprint 3 retrospektifinde ekip, değişken iş yoğunluklarına rağmen günlük ilerlemeleri WhatsApp üzerinden yazılı olarak paylaşmanın net görünürlük sağladığını, kritik teknik kararları Slack’te kısa sesli görüşmelerle çözmenin ise anlık sorunları hızla bertaraf ettiğini vurguladı; planlı toplantı sıklığının baştaki üç günde bir düzenden dört–beş günde bire çıkarılması odak kaybına yol açmadı, çünkü her buluşmada kapsam netleştirme yapılınca iş akışı rayında kaldı. Sadece Oğün Foan’ın sorumluluğundaki dolaba saklanma mekaniğini sprint sonunda tamamlanamadı.
-  - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı. 
+  - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı.
+
+  Build Linki: https://drive.google.com/drive/folders/1_T3jDt6eth2fD9fqGfCL_pjlrgaow2_y?usp=sharing
 
 ## License
 This project is proprietary. All rights reserved. See [LICENSE](LICENSE) for details.
