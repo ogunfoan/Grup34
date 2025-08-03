@@ -295,15 +295,13 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
 </details>
 
 - **Sprint Review**: 
-  - Sprint 2 süresince, oyunun ilk oynanabilir deneyimini oluşturan temel bileşenler tamamlandı. Geliştirilen sistemler, oyuncunun sahneyle kuracağı etkileşimi güçlendirdi ve deneyimi derinleştirdi. Görev takibi, ses yönetimi, etkileşimli nesne kontrolü ve takip eden varlık gibi kritik mekanikler oyuna entegre edilerek çalışır duruma getirildi.
-  - Başlangıç sahnesi ve ilk rüya mekânı, çevresel detaylar, ses efektleri ve görsel atmosferiyle birlikte tamamlandı. Bu alanlar, oyunun ilk sunulabilir deneyimini temsil edecek şekilde bütüncül olarak tasarlandı. UI tasarım tarafında, görev arayüzü ve anı defteri için geliştirilen bileşenler düzenlenerek oyuna aktarılmış ve test edilmiştir.
-  - Sprint sonunda ulaşılan yapı, teknik ve görsel açıdan ilk kullanıcı testine sunulabilecek düzeye gelmiştir. Tüm sistemlerin birbiriyle uyumlu çalışması, oyunun temel deneyimini sorunsuz biçimde yansıtmakta; tamamlanan çıktılar ise bir sonraki geliştirme aşamaları için sağlam bir zemin oluşturmaktadır.
+  - Sprint 3’te planlanan 17 görev eksiksiz tamamlanarak üç sahneli oynanabilir demo, tam sayfa defter sistemi, responsive ana menü-durdurma-bitiş ekranları, dinamik görev takibi ve navmesh tabanlı takipçi yapay zekâ başarıyla entegre edildi.
+  - Low-key aydınlatmalı 2. ve 3. sahneler, parçacık efektleri ve senkronize radyo cızırtısı-fısıltı ses katmanlarıyla oynanabilirlik testlerini sorunsuz geçti; sunucu saat eşitlemesi ve “oyunda kalma süresi” telemetrisi devreye alındı; WhatsApp üzerinden günlük yazılı bildirimler, Slack’te kritik sesli görüşmeler ve dört-beş günde bir yapılan planlı toplantılarla iletişim etkinliği korunarak versiyon çakışmaları anında çözüldü.
+  - Ekip demo build’ü %100 kabul edip yalnızca zorluk eğrisinin ince ayarlanmasını önerdi; böylece sprint 100/100 puanla kapanırken backlog’da açık kart kalmadı ve proje hedefleri tamamen gerçekleştirildi.
   
-- **Sprint Retrospective:** 
-  - Ekip, Sprint 2 süresince kişisel iş yoğunluklarına rağmen yüksek bir iş birliği ve iletişim içinde çalıştı. Görev dağılımı planlandığı şekilde ilerledi; karşılıklı destek sayesinde süreç verimli geçti.
-  - Sprintin ikinci haftasında artan iş yükü nedeniyle ekip, neredeyse her gün düzenli olarak toplandı. Bu sayede kararlar daha hızlı alındı ve tüm güncellemeler eş zamanlı takip edildi.
-  - Teknik tarafta, Main branch üzerinde yaşanan senkronizasyon sorunları ekip üyelerinin hızlı müdahalesiyle çözüldü. Versiyon kontrolü sırasında oluşan hatalar, ortak iletişimle kısa sürede giderildi.
-  - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı. Gelecek sprintlerde, bu iletişim düzeninin korunarak ilerlenmesine karar verildi.
+- **Sprint Retrospective**:
+  - Sprint 3 retrospektifinde ekip, değişken iş yoğunluklarına rağmen günlük ilerlemeleri WhatsApp üzerinden yazılı olarak paylaşmanın net görünürlük sağladığını, kritik teknik kararları Slack’te kısa sesli görüşmelerle çözmenin ise anlık sorunları hızla bertaraf ettiğini vurguladı; planlı toplantı sıklığının baştaki üç günde bir düzenden dört–beş günde bire çıkarılması odak kaybına yol açmadı, çünkü her buluşmada kapsam netleştirme yapılınca iş akışı rayında kaldı.
+  - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı. 
 
 ## License
 This project is proprietary. All rights reserved. See [LICENSE](LICENSE) for details.
