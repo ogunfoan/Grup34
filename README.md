@@ -43,7 +43,7 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 ## Oyun Özellikleri
 
 - **Tür:** Psikolojik korku, hikâye odaklı keşif (narrative exploration), bulmaca  
-- **Görsel Stil:** 3D (Low Poly), rüya ve gerçeklik arasında geçiş efekti olan pastel-grimsi filtreler, zamanla bozulmaya uğrayan çevre dokuları  
+- **Görsel Stil:** 3D (Stylized Realism) tabanlı, rüya ve gerçeklik arasında geçiş efekti olan pastel-grimsi filtreler, zamanla bozulmaya uğrayan çevre dokuları  
 - **Platform:** PC  
 - **Perspektif:** 1. şahıs sabit kamera  
 - **Ana Mekanlar:** Elias’ın hastane odası (gerçek dünya), çarpıtılmış hastane yapısı (rüya dünyası)  
@@ -169,6 +169,84 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 
 ![Screenshot_64](https://github.com/user-attachments/assets/9989dadc-0b3d-426b-ad2e-ac4222bd2d6c)
 ![Screenshot_65](https://github.com/user-attachments/assets/b8ebd954-3fc2-4740-a2f2-cae7dbe26af0)
+
+
+<details> <summary><h3>False Awakening – Oyun İçi Durum Görselleri</h3></summary>
+  
+![Screenshot_62](https://github.com/user-attachments/assets/db619a6f-02c4-4a53-a304-a7685a1e9e7a)
+![Screenshot_63](https://github.com/user-attachments/assets/a950dbe4-75ae-494d-89be-dbb0af40e7bb)
+![Screenshot_61](https://github.com/user-attachments/assets/f75a48c4-6dd6-4829-9cab-b3a23086ea54)
+![Screenshot_60](https://github.com/user-attachments/assets/7ca08c04-8d1a-4177-afd6-652c440a177b)
+
+
+**(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN KORKABİLİRSİNİZ!!!)** </h1>
+
+
+
+https://github.com/user-attachments/assets/e8b775f8-df1e-4d6d-a181-2278b4e08b6a
+
+
+https://github.com/user-attachments/assets/65162b08-70b8-4245-966e-cb692c23182b
+
+
+https://github.com/user-attachments/assets/dea3dbab-88f2-4c35-b5c2-1f93e1783300
+
+
+https://github.com/user-attachments/assets/ec28333f-467d-41da-8a94-cfc98901cfc1
+
+
+
+https://github.com/user-attachments/assets/3fb15ace-d84e-47c0-a036-8e07dce8bb54
+
+
+
+https://github.com/user-attachments/assets/6d228c2c-af7e-4581-8037-4dbfea62fc20
+
+
+
+https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
+
+
+
+![FA - Canavarla An](https://github.com/user-attachments/assets/56fac651-bce0-44ff-b311-ad52700d9b6a)
+
+
+**(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN)**
+
+
+</details>
+
+- **Sprint Review**: 
+  - Sprint 2 süresince, oyunun ilk oynanabilir deneyimini oluşturan temel bileşenler tamamlandı. Geliştirilen sistemler, oyuncunun sahneyle kuracağı etkileşimi güçlendirdi ve deneyimi derinleştirdi. Görev takibi, ses yönetimi, etkileşimli nesne kontrolü ve takip eden varlık gibi kritik mekanikler oyuna entegre edilerek çalışır duruma getirildi.
+  - Başlangıç sahnesi ve ilk rüya mekânı, çevresel detaylar, ses efektleri ve görsel atmosferiyle birlikte tamamlandı. Bu alanlar, oyunun ilk sunulabilir deneyimini temsil edecek şekilde bütüncül olarak tasarlandı. UI tasarım tarafında, görev arayüzü ve anı defteri için geliştirilen bileşenler düzenlenerek oyuna aktarılmış ve test edilmiştir.
+  - Sprint sonunda ulaşılan yapı, teknik ve görsel açıdan ilk kullanıcı testine sunulabilecek düzeye gelmiştir. Tüm sistemlerin birbiriyle uyumlu çalışması, oyunun temel deneyimini sorunsuz biçimde yansıtmakta; tamamlanan çıktılar ise bir sonraki geliştirme aşamaları için sağlam bir zemin oluşturmaktadır.
+  
+- **Sprint Retrospective:** 
+  - Ekip, Sprint 2 süresince kişisel iş yoğunluklarına rağmen yüksek bir iş birliği ve iletişim içinde çalıştı. Görev dağılımı planlandığı şekilde ilerledi; karşılıklı destek sayesinde süreç verimli geçti.
+  - Sprintin ikinci haftasında artan iş yükü nedeniyle ekip, neredeyse her gün düzenli olarak toplandı. Bu sayede kararlar daha hızlı alındı ve tüm güncellemeler eş zamanlı takip edildi.
+  - Teknik tarafta, Main branch üzerinde yaşanan senkronizasyon sorunları ekip üyelerinin hızlı müdahalesiyle çözüldü. Versiyon kontrolü sırasında oluşan hatalar, ortak iletişimle kısa sürede giderildi.
+  - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı. Gelecek sprintlerde, bu iletişim düzeninin korunarak ilerlenmesine karar verildi.
+ 
+# Sprint 3
+
+- **Sprint Notları**: Son sprintte defter sistemi tüm sayfaları, obje açıklamaları ve ilerleme kilitleriyle eksiksiz tamamlanıp oyun içi bilgilendirme akışı ve “E” etkileşim bildirimleriyle oynanışa entegre edildi; ana menü, durdurma ve bitiş ekranları responsive tasarım, ölçeklenebilir UI öğeleri ve dinamik görev takibi göstergesiyle son hâline getirildi; ikinci ve üçüncü seviye 3D ortam modelleri, low-key aydınlatma, ışık/fener kurgusu, parçacık efektleri ve atmosferik ses katmanları optimize edilerek oynanabilirlik testleri başarıyla geçildi; güncellenmiş yapay zekâ navmesh tabanlı path-finding ve takip eden varlık sistemiyle birleştirilerek düşman davranışları tutarlılaştırıldı; radyo cızırtıları, çevresel fısıltılar ve tüm menü-oyun içi ses paketleri dinamik ses seviyeleriyle senkronize edilerek ses tasarımı tamamlandı; sunucu tabanlı saat eşitlemesi, oyunda kalma süresi analitiği ve API üzerinden telemetri raporlaması devreye alınarak teknik altyapı güçlendirildi; asset yönetimi düzenlenip tüm görsel-işitsel içerikler sürüm kontrolüne aktarıldı; böylece planlanan 17/17 görev eksiksiz bitirilerek Sprint 3 100/100 puanla kapandı ve proje hedeflerinin tamamı gerçekleştirilerek geliştirme süreci başarıyla sonlandırıldı.
+  
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Proje süreci toplamda 300 puanlık bir iş yükü üzerinden yapılandırılmıştır. Bu puan, görevlerin öncelik seviyelerine (High, Medium, Low) göre değerlendirilerek dağıtılmıştır. Her sprint için yaklaşık 100 puanlık görev belirlenmiş ve Sprint 3’ye ait görevlerin tamamı başarıyla tamamlanarak “Done” sütununa aktarılmıştır. Bu kapsamda Sprint 3, planlandığı şekilde 100/100 puanla başarıyla tamamlanmıştır. Sistem, ilerleyişin ölçülebilir olmasını sağlarken iş yükü dağılımında da denge kurmuştur.
+
+- **Backlog düzeni ve Story seçimleri**: Backlog; oyunun tüm geliştirme sürecine dair görevleri kapsamaktadır ve sprint planlamasına uygun şekilde yapılandırılmıştır. Miro panosu üzerindeki kartlar, görev türlerine göre renk kodlarıyla ayrılmıştır turuncu item'lar _tasarım_, mavi item'lar _kodlama/geliştirme_, sarı item'lar _görsel efekt_, mor item'lar _ses_ gösterirken, yeşil item'lar ise _türü olmayan_ görevleri temsil etmektedir. Sprint 1’de yer alan görevler bu renk sistemine uygun biçimde seçilmiş; oyunun temel yapısını kuracak şekilde planlanmıştır.
+
+- **Daily Scrum**: Sprint süresince ekip üyeleri, artan iş yoğunlukları nedeniyle günlük ilerleme paylaşımlarını yazılı olarak WhatsApp üzerinden sürdürmüş, böylece sürecin şeffaf takibi ve ekip içi görünürlük korunmuştur; kritik teknik kararlar, anlık yönlendirmeler ve eş-zamanlı bilgi akışı gerektiğinde ise Slack üzerinden sesli görüşmeler yapılmıştır; başlangıçta sık gerçekleşen ekip toplantıları ihtiyaçlara göre dört-beş günde bir düzenlenecek şekilde güncellenmiş, ancak planlı ve sistematik bu buluşmalar sayesinde görevlerde hızlı ilerleme kaydedilmiştir; kurulan iletişim dengesi sprint boyunca hem yazılı kayıtların tutulmasını hem de anlık koordinasyonun sağlıklı yürütülmesini sağlamıştır; böylece biriken sorunlar hızla çözülmüş, ekip uyumu korunmuş ve görev geçişleri net biçimde yönetilmiştir. [Sprint 3 – Daily Scrum Documentation](https://imgur.com/a/gJnV0MP)
+
+- **Sprint 3 Board**:
+
+![Screenshot_19](https://github.com/user-attachments/assets/4de695ba-6e65-4454-9249-c26934d3fc97)
+![Screenshot_11](https://github.com/user-attachments/assets/7c9ac16a-da33-454c-9627-00a02e29f1a2)
+![Screenshot_12](https://github.com/user-attachments/assets/414f80f7-8a57-4b19-b5db-666df9bea9d2)
+![Screenshot_17](https://github.com/user-attachments/assets/28c7a246-360b-46da-8f39-d447c4c5e0ba)
+![Screenshot_18](https://github.com/user-attachments/assets/89a9201b-2ea3-4da8-81f2-06d5b7a9594b)
+
 
 
 <details> <summary><h3>False Awakening – Oyun İçi Durum Görselleri</h3></summary>
