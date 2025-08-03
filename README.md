@@ -1,4 +1,4 @@
-## **Takım İsmi**
+e## **Takım İsmi**
 
 **Grup 34** 
 
@@ -74,7 +74,7 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 
 - **Bölüm Yapısı:** Oyun, toplamda 3 ana rüya bölgesinden oluşur. Her bölge Elias’ın zihninde çarpıtılmış bir hastane bölümüne karşılık gelir: Çocuk Koğuşu (Noah’ın anıları), Morg (ölümle yüzleşme), Arşiv (unutulan anılar).
 - **Defter ve Sembol Sistemi:** Her rüya bölgesinde bir defter sayfasının parçası saklıdır. Bu parçayı bulan oyuncunun defterinde bir sembol, sayı veya görsel belirir. Bu semboller hem hikâyeyi açar hem de finalde çözülmesi gereken şifre sisteminin parçalarıdır.
-- **Final Aşaması:** Tüm 3 rüya bölgesi tamamlandığında, defterdeki ipuçları birleştirilerek oyuncuya kapalı oda kilidini açacak şifreyi verir. Şifre doğru girilirse Elias odadan çıkar ve oyunun sonuna ulaşılır.
+- **Final Aşaması:** Üç rüya dünyası tamamlandığında oyuncu, son rüyadaki son üç anı parçasını toplar; tetiklenen ters kovalamaca sekansında canavarı kovalayarak Elias’ın kök korkularıyla yüzleşir ve bu sahne ana anlatıyı sonlandırır.
 
 
 ## Hedef Kitle
@@ -229,7 +229,7 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
  
 # Sprint 3
 
-- **Sprint Notları**: Son sprintte defter sistemi tüm sayfaları, obje açıklamaları ve ilerleme kilitleriyle eksiksiz tamamlanıp oyun içi bilgilendirme akışı ve “E” etkileşim bildirimleriyle oynanışa entegre edildi; ana menü, durdurma ve bitiş ekranları responsive tasarım, ölçeklenebilir UI öğeleri ve dinamik görev takibi göstergesiyle son hâline getirildi; ikinci ve üçüncü seviye 3D ortam modelleri, low-key aydınlatma, ışık/fener kurgusu, parçacık efektleri ve atmosferik ses katmanları optimize edilerek oynanabilirlik testleri başarıyla geçildi; güncellenmiş yapay zekâ navmesh tabanlı path-finding ve takip eden varlık sistemiyle birleştirilerek düşman davranışları tutarlılaştırıldı; radyo cızırtıları, çevresel fısıltılar ve tüm menü-oyun içi ses paketleri dinamik ses seviyeleriyle senkronize edilerek ses tasarımı tamamlandı; sunucu tabanlı saat eşitlemesi, oyunda kalma süresi analitiği ve API üzerinden telemetri raporlaması devreye alınarak teknik altyapı güçlendirildi; asset yönetimi düzenlenip tüm görsel-işitsel içerikler sürüm kontrolüne aktarıldı; böylece planlanan 17/17 görev eksiksiz bitirilerek Sprint 3 100/100 puanla kapandı ve proje hedeflerinin tamamı gerçekleştirilerek geliştirme süreci başarıyla sonlandırıldı.
+- **Sprint Notları**: Son sprintte defter sistemi tüm sayfaları, obje açıklamaları ve ilerleme kilitleriyle eksiksiz tamamlanıp oyun içi bilgilendirme akışı ve “E” etkileşim bildirimleriyle oynanışa entegre edildi; ana menü, durdurma ve bitiş ekranları responsive tasarım, ölçeklenebilir UI öğeleri ve dinamik görev takibi göstergesiyle son hâline getirildi; ikinci ve üçüncü seviye 3D ortam modelleri, low-key aydınlatma, ışık/fener kurgusu, parçacık efektleri ve atmosferik ses katmanları optimize edilerek oynanabilirlik testleri başarıyla geçildi; güncellenmiş yapay zekâ navmesh tabanlı path-finding ve takip eden varlık sistemiyle birleştirilerek düşman davranışları tutarlılaştırıldı; radyo cızırtıları, çevresel fısıltılar ve tüm menü-oyun içi ses paketleri dinamik ses seviyeleriyle senkronize edilerek ses tasarımı tamamlandı; sunucu tabanlı saat eşitlemesi, oyunda kalma süresi analitiği ve API üzerinden telemetri raporlaması devreye alınarak teknik altyapı güçlendirildi; asset yönetimi düzenlenip tüm görsel-işitsel içerikler sürüm kontrolüne aktarıldı. Sadece bir görevde; takipçi varlıktan kaçmak için dolaba saklanma mekaniği, resmi backlog maddesi olmamasına karşın Ogün Foan’ın bu sprintte prototiplenmek üzere planladığı bir geliştirmeydi; ancak toplantı yoğunluğu nedeniyle, ekip desteğine rağmen sprint sonunda tamamlanamadı. Ama planlanan 17/17 görev eksiksiz bitirilerek Sprint 3 100/100 puanla kapandı ve proje hedeflerinin tamamı gerçekleştirilerek geliştirme süreci başarıyla sonlandırıldı.
   
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
@@ -297,10 +297,11 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
 - **Sprint Review**: 
   - Sprint 3’te planlanan 17 görev eksiksiz tamamlanarak üç sahneli oynanabilir demo, tam sayfa defter sistemi, responsive ana menü-durdurma-bitiş ekranları, dinamik görev takibi ve navmesh tabanlı takipçi yapay zekâ başarıyla entegre edildi.
   - Low-key aydınlatmalı 2. ve 3. sahneler, parçacık efektleri ve senkronize radyo cızırtısı-fısıltı ses katmanlarıyla oynanabilirlik testlerini sorunsuz geçti; sunucu saat eşitlemesi ve “oyunda kalma süresi” telemetrisi devreye alındı; WhatsApp üzerinden günlük yazılı bildirimler, Slack’te kritik sesli görüşmeler ve dört-beş günde bir yapılan planlı toplantılarla iletişim etkinliği korunarak versiyon çakışmaları anında çözüldü.
+  - Yalnızca takipçi varlıktan kaçmak için dolaba saklanma mekaniği—backlog kartlarında bulunmamasına rağmen Oğün Foan tarafından bu sprintte prototiplenmek üzere planlanan ek özellik sprint sonunda tamamlanamadı.
   - Ekip demo build’ü %100 kabul edip yalnızca zorluk eğrisinin ince ayarlanmasını önerdi; böylece sprint 100/100 puanla kapanırken backlog’da açık kart kalmadı ve proje hedefleri tamamen gerçekleştirildi.
   
 - **Sprint Retrospective**:
-  - Sprint 3 retrospektifinde ekip, değişken iş yoğunluklarına rağmen günlük ilerlemeleri WhatsApp üzerinden yazılı olarak paylaşmanın net görünürlük sağladığını, kritik teknik kararları Slack’te kısa sesli görüşmelerle çözmenin ise anlık sorunları hızla bertaraf ettiğini vurguladı; planlı toplantı sıklığının baştaki üç günde bir düzenden dört–beş günde bire çıkarılması odak kaybına yol açmadı, çünkü her buluşmada kapsam netleştirme yapılınca iş akışı rayında kaldı.
+  - Sprint 3 retrospektifinde ekip, değişken iş yoğunluklarına rağmen günlük ilerlemeleri WhatsApp üzerinden yazılı olarak paylaşmanın net görünürlük sağladığını, kritik teknik kararları Slack’te kısa sesli görüşmelerle çözmenin ise anlık sorunları hızla bertaraf ettiğini vurguladı; planlı toplantı sıklığının baştaki üç günde bir düzenden dört–beş günde bire çıkarılması odak kaybına yol açmadı, çünkü her buluşmada kapsam netleştirme yapılınca iş akışı rayında kaldı. Sadece Oğün Foan’ın sorumluluğundaki dolaba saklanma mekaniğini sprint sonunda tamamlanamadı.
   - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı. 
 
 ## License
