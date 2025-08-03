@@ -241,11 +241,11 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
 
 - **Sprint 3 Board**:
 
-![Screenshot_19](https://github.com/user-attachments/assets/4de695ba-6e65-4454-9249-c26934d3fc97)
-![Screenshot_11](https://github.com/user-attachments/assets/7c9ac16a-da33-454c-9627-00a02e29f1a2)
-![Screenshot_12](https://github.com/user-attachments/assets/414f80f7-8a57-4b19-b5db-666df9bea9d2)
-![Screenshot_17](https://github.com/user-attachments/assets/28c7a246-360b-46da-8f39-d447c4c5e0ba)
-![Screenshot_18](https://github.com/user-attachments/assets/89a9201b-2ea3-4da8-81f2-06d5b7a9594b)
+![Screenshot_27](https://github.com/user-attachments/assets/c17581d9-3413-4ffb-9187-8a7490ad17de)
+![Screenshot_29](https://github.com/user-attachments/assets/7b75e24e-d8b1-4b76-b3c6-95b268f31baf)
+![Screenshot_34](https://github.com/user-attachments/assets/740d6a53-dd3e-4ad1-9f4a-199e34bc811a)
+![Screenshot_36](https://github.com/user-attachments/assets/86a41f3b-6537-421c-a8dd-ea0b4a30d639)
+
 
 
 
