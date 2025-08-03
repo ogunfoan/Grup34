@@ -7929,7 +7929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1794187570603128565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8009,7 +8009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3484739699335384764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collada visual scene group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8027,7 +8027,7 @@ GameObject:
   - component: {fileID: 525550153872698771}
   - component: {fileID: 3341648401748016470}
   - component: {fileID: 7543430440593347460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8194,7 +8194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7502304523142283402}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8301,7 +8301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3607194387128427189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: fc11e47d90704593990de17b5ef82ce0.obj.cleaner.materialmerger.gles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8685,7 +8685,7 @@ GameObject:
   - component: {fileID: 6571087338323374144}
   - component: {fileID: 6584814930412222324}
   - component: {fileID: 7101945432593952091}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8835,7 +8835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5324845710487847105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GLTF_SceneRootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8861,7 +8861,7 @@ GameObject:
   - component: {fileID: 6422978487632220285}
   - component: {fileID: 2689546409488897469}
   - component: {fileID: 3160827708392964492}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8978,7 +8978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2851212455027119320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9013,7 +9013,7 @@ GameObject:
   - component: {fileID: 5146681718170778172}
   - component: {fileID: 5146681718170778171}
   - component: {fileID: 5146681718170778173}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MusicBox_Object
   m_TagString: MusicBox
   m_Icon: {fileID: 0}
@@ -9032,7 +9032,7 @@ GameObject:
   - component: {fileID: 5146681718638780527}
   - component: {fileID: 5146681718638780529}
   - component: {fileID: 5146681718638780528}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shoes_Object
   m_TagString: Shoes
   m_Icon: {fileID: 0}
@@ -9051,7 +9051,7 @@ GameObject:
   - component: {fileID: 5146681719527090151}
   - component: {fileID: 5146681719527090150}
   - component: {fileID: 5146681719527090152}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Paper_Object
   m_TagString: Paper
   m_Icon: {fileID: 0}
@@ -9263,7 +9263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3355314944308004894}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9297,7 +9297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3697474065005450180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9313,7 +9313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 702612132112148795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9631,7 +9631,7 @@ GameObject:
   - component: {fileID: 9173872946606442998}
   - component: {fileID: 5110833524519443415}
   - component: {fileID: 5198494514860459985}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9649,7 +9649,7 @@ GameObject:
   - component: {fileID: 4172590987900358541}
   - component: {fileID: 7452426336253191239}
   - component: {fileID: 6857165643790987965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9779,7 +9779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7611091277612648790}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BezierCurve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9923,7 +9923,7 @@ GameObject:
   - component: {fileID: 8622590738239194171}
   - component: {fileID: 168761352927650136}
   - component: {fileID: 5230285797925507022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10045,7 +10045,7 @@ GameObject:
   - component: {fileID: 7896845859444285390}
   - component: {fileID: 456523058978814021}
   - component: {fileID: 6877792949846632707}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10078,7 +10078,7 @@ GameObject:
   - component: {fileID: 3894241375834824606}
   - component: {fileID: 1962752691901599016}
   - component: {fileID: 2190023819595706668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}

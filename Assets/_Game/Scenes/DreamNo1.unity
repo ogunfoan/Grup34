@@ -3409,6 +3409,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: b20d7c47e4b68e041a421b628001a60e, type: 2}
     - target: {fileID: 4289087914784933539, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
+      propertyPath: interactableText
+      value: 
+      objectReference: {fileID: 9143837883343871957}
+    - target: {fileID: 4289087914784933539, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: spawnpoints.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -7794,27 +7798,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Name
@@ -7822,7 +7826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_TagString
@@ -7830,7 +7834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10924,7 +10928,7 @@ GameObject:
   - component: {fileID: 2598505237360515549}
   - component: {fileID: 7972938390356931187}
   - component: {fileID: 3520249574132512261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11023,7 +11027,7 @@ GameObject:
   - component: {fileID: 5613814592451738575}
   - component: {fileID: 6325446032055684564}
   - component: {fileID: 7961193473372020188}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11056,7 +11060,7 @@ GameObject:
   - component: {fileID: 919132148158882338}
   - component: {fileID: 919132148158882337}
   - component: {fileID: 919132148158882339}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Emzik
   m_TagString: Pacifier
   m_Icon: {fileID: 0}
@@ -11152,7 +11156,7 @@ GameObject:
   - component: {fileID: 924671104522625938}
   - component: {fileID: 7150476135925371582}
   - component: {fileID: 8646489398329950490}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ring_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11219,7 +11223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4497276822158272347}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: front_part
   m_TagString: Pacifier
   m_Icon: {fileID: 0}
@@ -11298,13 +11302,21 @@ GameObject:
   - component: {fileID: 8050465344440422408}
   - component: {fileID: 6766525945034315835}
   - component: {fileID: 426866212717327620}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!222 &1694423325016378760
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959749639585411565}
+  m_CullTransparentMesh: 1
 --- !u!4 &1794881794029197292
 Transform:
   m_ObjectHideFlags: 0
@@ -11463,7 +11475,7 @@ GameObject:
   - component: {fileID: 1794881794029197292}
   - component: {fileID: 8013758915416189789}
   - component: {fileID: 2046923883820395365}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TeddyBear__0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11512,7 +11524,7 @@ GameObject:
   - component: {fileID: 7112004823937772857}
   - component: {fileID: 5426774613329794308}
   - component: {fileID: 8100873140059212312}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: main_element
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11592,7 +11604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938453530500067281}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ring
   m_TagString: Pacifier
   m_Icon: {fileID: 0}
@@ -11612,6 +11624,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 298971821010560855}
+  - {fileID: 6985430474607440525}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11696,7 +11709,7 @@ GameObject:
   - component: {fileID: 1773103262}
   - component: {fileID: 1773103264}
   - component: {fileID: 1773103263}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Ay\u0131c\u0131k"
   m_TagString: Bear
   m_Icon: {fileID: 0}
@@ -11738,7 +11751,7 @@ GameObject:
   - component: {fileID: 5981277718390323839}
   - component: {fileID: 6825958329667242263}
   - component: {fileID: 1646575270093911667}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11771,7 +11784,7 @@ GameObject:
   - component: {fileID: 1074434911225733024}
   - component: {fileID: 245268607673617500}
   - component: {fileID: 4722339471528010606}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rounding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11789,7 +11802,7 @@ GameObject:
   - component: {fileID: 5393461956114946544}
   - component: {fileID: 997736640889173784}
   - component: {fileID: 7640789125080486654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: element_backside_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11860,7 +11873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2538796671720311530}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TeddyBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11921,7 +11934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4542990285751210710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: f5992d32f22e4a5dae76add66fbd7c6e.fbx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12006,7 +12019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3762853040553538022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: connective_element
   m_TagString: Pacifier
   m_Icon: {fileID: 0}
@@ -12076,7 +12089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6488588711536240690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12174,6 +12187,24 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5959749639585411565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6985430474607440525}
+  - component: {fileID: 1694423325016378760}
+  - component: {fileID: 9143837883343871957}
+  m_Layer: 5
+  m_Name: InteractableText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &5981277718390323839
 Transform:
   m_ObjectHideFlags: 0
@@ -12323,7 +12354,7 @@ GameObject:
   - component: {fileID: 4131547512598795899}
   - component: {fileID: 7993458299521904496}
   - component: {fileID: 8411242752010694130}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tube_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12418,13 +12449,32 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7686803863208473104}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!224 &6985430474607440525
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959749639585411565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3515135458210537802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 48.644226}
+  m_SizeDelta: {x: 1246, y: 37.9063}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7094851652811774985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12601,7 +12651,7 @@ GameObject:
   - component: {fileID: 8741997493338711376}
   - component: {fileID: 9107673613635091025}
   - component: {fileID: 6745068022237153816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rounding_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13056,7 +13106,7 @@ GameObject:
   - component: {fileID: 5432946410974058353}
   - component: {fileID: 6340669107830197960}
   - component: {fileID: 3286464361671124685}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rounding_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13229,7 +13279,7 @@ GameObject:
   - component: {fileID: 1365519497055191103}
   - component: {fileID: 3858142129349374830}
   - component: {fileID: 5057626436828024253}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: element_backside_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13244,6 +13294,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7488979349664365293}
   m_Mesh: {fileID: 63591987162063901, guid: 23999c1de5ac64546a88c767d8ce5edc, type: 3}
+--- !u!114 &9143837883343871957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959749639585411565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\"E\" ile etkile\u015Fime ge\xE7in."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 784edfd0097e2834eac43168af856993, type: 2}
+  m_sharedMaterial: {fileID: -4980200713746852769, guid: 784edfd0097e2834eac43168af856993, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 25
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &9206212451574726776
 GameObject:
   m_ObjectHideFlags: 0
@@ -13253,7 +13394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7176765690717164563}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: main_part
   m_TagString: Pacifier
   m_Icon: {fileID: 0}

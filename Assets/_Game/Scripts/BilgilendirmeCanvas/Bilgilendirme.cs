@@ -25,17 +25,17 @@ public class Bilgilendirme : MonoBehaviour
 
         if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
         {
-            Sprite Dream1Sprite = Resources.Load<Sprite>("bilgilendirme/Dream1_WakeUp");
+            Sprite Dream1Sprite = Resources.Load<Sprite>("bilgilendirme/D1_wu");
             bilgilendirmeSprites.Add(Dream1Sprite);
         }
         if (PlayerPrefs.GetInt("Dream2WakeUp") == 1)
         {
-            Sprite Dream2Sprite = Resources.Load<Sprite>("bilgilendirme/Dream1_WakeUp");
+            Sprite Dream2Sprite = Resources.Load<Sprite>("bilgilendirme/D2_wu");
             bilgilendirmeSprites.Add(Dream2Sprite);
         }
         if (PlayerPrefs.GetInt("Dream3WakeUp") == 1)
         {
-            Sprite Dream3Sprite = Resources.Load<Sprite>("bilgilendirme/Dream1_WakeUp");
+            Sprite Dream3Sprite = Resources.Load<Sprite>("bilgilendirme/D3_wu");
             bilgilendirmeSprites.Add(Dream3Sprite);
         }
         UpdateImage();

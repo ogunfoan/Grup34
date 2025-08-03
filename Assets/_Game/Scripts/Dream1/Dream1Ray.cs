@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -140,8 +141,6 @@ public class Dream1Ray : MonoBehaviour
         CollectedText.text = PlayerPrefs.GetInt("Collected").ToString()+"/3";
         if (Pacifier == true && Bear == true && Hammer == true)
         {
-            Sprite Dream1sprite = Resources.Load<Sprite>("bilgilendirme/Dream1_WakeUp");
-            Bilgilendirme.Instance.bilgilendirmeSprites.Add(Dream1sprite);
             PlayerPrefs.SetInt("Dream1WakeUp", 1);
             PlayerPrefs.SetInt("YatakEtkilesim", 0);
             SceneManager.LoadScene("HospitalRoomMap");
@@ -155,9 +154,6 @@ public class Dream1Ray : MonoBehaviour
         CollectedText.text = PlayerPrefs.GetInt("Collected").ToString() + "/3";
         if (Paper == true && MusicBox == true && Shoes == true)
         {
-            Sprite Dream2sprite = Resources.Load<Sprite>("bilgilendirme/Dream3_WakeUp");
-            Bilgilendirme.Instance.bilgilendirmeSprites.Add(Dream2sprite);
-            Debug.Log("Dream2sprite adý: " + Dream2sprite.name);
             PlayerPrefs.SetInt("Dream2WakeUp", 1);
             PlayerPrefs.SetInt("YatakEtkilesim", 0);
             SceneManager.LoadScene("HospitalRoomMap");
@@ -173,8 +169,6 @@ public class Dream1Ray : MonoBehaviour
         if (Clothes == true && Vaccine == true && ToyCar == true)
         {
             collectedAllItem = true;
-            Sprite Dream3sprite = Resources.Load<Sprite>("bilgilendirme/Dream3_WakeUp");
-            Bilgilendirme.Instance.bilgilendirmeSprites?.Add(Dream3sprite);
             PlayerPrefs.SetInt("Dream3WakeUp", 1);
             PlayerPrefs.SetInt("YatakEtkilesim", 0);
             //SceneManager.LoadScene("HospitalRoomMap");
