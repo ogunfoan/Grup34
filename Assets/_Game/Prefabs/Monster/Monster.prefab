@@ -53,6 +53,8 @@ MonoBehaviour:
   player: {fileID: 0}
   detectionDistance: 15
   viewAngle: 220
+  walkSpeed: 1
+  chaseSpeed: 3
   agent: {fileID: 8039555368759159693}
   AudioSource: {fileID: 5661964565455327119}
   clip1: {fileID: 8300000, guid: 139f8dfa676e4074ab658e7cbf9f309c, type: 3}
@@ -78,6 +80,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   controller: {fileID: 7457944379263845531}
+  playerHiding: {fileID: 0}
+  isFinalChase: 0
+  textUI: {fileID: 0}
+  fadeImage: {fileID: 0}
+  blackImage: {fileID: 0}
+  fadeDuration: 3
+  dreamOneCanvas: {fileID: 0}
+  dream1Ray: {fileID: 0}
 --- !u!195 &8039555368759159693
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -157,7 +167,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
