@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/DreamNo3.unity
     guid: b224dc1f02b2d4034a24ba434d4e152d
+  - enabled: 1
+    path: Assets/_Game/Scenes/FinalScene.unity
+    guid: ece24e9b0ac18904ebf3621a6aa063ed
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

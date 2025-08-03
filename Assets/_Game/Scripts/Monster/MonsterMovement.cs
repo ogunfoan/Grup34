@@ -96,6 +96,7 @@ public class MonsterMovement : MonoBehaviour
                 dreamOneCanvas.SetActive(false);
 
                 //Son final sahnesi yükleme yeri
+                SceneManager.LoadScene("FinalScene");
         });
     }
     void Update()
