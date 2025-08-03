@@ -173,7 +173,7 @@ public class Dream1Ray : MonoBehaviour
         {
             collectedAllItem = true;
             Sprite sprite = Resources.Load<Sprite>("bilgilendirme/Dream3_WakeUp");
-            Bilgilendirme.Instance.bilgilendirmeSprites.Add(sprite);
+            Bilgilendirme.Instance.bilgilendirmeSprites?.Add(sprite);
             PlayerPrefs.SetInt("Dream3WakeUp", 1);
             PlayerPrefs.SetInt("YatakEtkilesim", 0);
             //SceneManager.LoadScene("HospitalRoomMap");

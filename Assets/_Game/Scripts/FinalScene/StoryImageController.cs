@@ -1,17 +1,16 @@
 using DG.Tweening;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoryImageController : MonoBehaviour
 {
-    public Image[] ImageHolders; // 0,1,2 þeklinde sýrayla ekle
-    public Image[] Images; // 0,1,2 þeklinde sýrayla ekle
+    public Image[] ImageHolders;
+    public Image[] Images;
     public float fadeDuration = 1f;
-    public float showDuration = 2f; // gösterimde kalma süresi
+    public float showDuration = 2f;
 
     private int currentIndex = 0;
-    private bool isWaitingForInput = false; // Týklama bekliyor mu?
+    private bool isWaitingForInput = false;
 
 
     public Image inputImage;
@@ -21,7 +20,7 @@ public class StoryImageController : MonoBehaviour
     {
         foreach (var p in Images)
         {
-            p.color = new Color(1, 1, 1, 0); // Tümünü görünmez baþlat
+            p.color = new Color(1, 1, 1, 0);
         }
 
         ShowPanel(currentIndex);
