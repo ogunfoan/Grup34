@@ -806,6 +806,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 605920044}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
+      propertyPath: walkSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
+      propertyPath: chaseSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: monsterJumpScare
       value: 
       objectReference: {fileID: 598501891}

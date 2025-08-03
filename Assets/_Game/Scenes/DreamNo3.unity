@@ -1565,12 +1565,16 @@ PrefabInstance:
       objectReference: {fileID: 1053513082}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: walkSpeed
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: blackImage
       value: 
       objectReference: {fileID: 318011556}
+    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
+      propertyPath: chaseSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: dreamOneCanvas
       value: 
