@@ -1,6 +1,6 @@
-e## **Takım İsmi**
+## **Takım İsmi**
 
-**Grup 34** 
+**Omina Games** 
 
 ## **Takım Logosu**
 
