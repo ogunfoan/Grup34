@@ -282,7 +282,6 @@ https://github.com/user-attachments/assets/41efb682-b01b-4449-ac9d-929f99e0758e
   - Sprint 3 retrospektifinde ekip, değişken iş yoğunluklarına rağmen günlük ilerlemeleri WhatsApp üzerinden yazılı olarak paylaşmanın net görünürlük sağladığını, kritik teknik kararları Slack’te kısa sesli görüşmelerle çözmenin ise anlık sorunları hızla bertaraf ettiğini vurguladı; planlı toplantı sıklığının baştaki üç günde bir düzenden dört–beş günde bire çıkarılması odak kaybına yol açmadı, çünkü her buluşmada kapsam netleştirme yapılınca iş akışı rayında kaldı. Sadece Oğün Foan’ın sorumluluğundaki dolaba saklanma mekaniğini sprint sonunda tamamlanamadı.
   - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı.
 
-  Build Linki: https://drive.google.com/drive/folders/1_T3jDt6eth2fD9fqGfCL_pjlrgaow2_y?usp=sharing
 
 ## License
 This project is proprietary. All rights reserved. See [LICENSE](LICENSE) for details.
